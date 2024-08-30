@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.hid {
+  height: 100%;
+  overflow: hidden;
+}
+
+.main {
+  width: 100%;
+  height: 100%;  
+  background: radial-gradient(
+    rgba(0, 0, 0, .2), 
+    rgba(0, 0, 0, .8)), 
+  url(https://www.curio.nl/sites/default/files/styles/hero_extra_large/public/2024-06/curio_locatie_mbo_terheijdenseweg_350-2_0.jpg?itok=QBj--WnE) no-repeat center / cover;
+  transform: scale(1.1);
+  backface-visibility: hidden;
+  transition: transform 1s ease-out;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-family: sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+ul li{
+  font-weight: 100;
+  font-size: 1.5;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  cursor: pointer;
+  transition: background .6s cubic-bezier(0.36, .5, 0.17, 1),
+    padding .6s cubic-bezier(0.36, .5, 0.17, 1),
+    letter-spacing .6s cubic-bezier(0.36, .5, 0.17, 1);
+  opacity: 1;
+}
+ul a
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+ul li:hover {
+  background: rgba(0, 0, 0, .4);
+  padding: 2rem 0;
+  letter-spacing: .5rem;
+}
