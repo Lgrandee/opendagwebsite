@@ -421,6 +421,14 @@ justify-content: center
     padding: 20px;
     text-align: center;
     transition: transform 250ms;
+    margin-bottom: 3rem;
+}
+.vak-card *{
+  color: white;
+}
+
+.vak-card:hover{
+  transform: scale(1.1);
 }
 
 .lesroster{
