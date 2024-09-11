@@ -4,6 +4,10 @@
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
+@media only screen and (max-width: 375px) {
+  /* Stijlen voor iPhone schermen */
+}
+
 .wrapper
 {
   margin-right: auto; /* 1 */
@@ -486,5 +490,35 @@ justify-content: center
 }
 
 .Blok{
+  background-image: url('https://lh6.googleusercontent.com/proxy/s95P0uchtukWg_s4W4NH4xU0DTCtoxE4DDCzzhOT9VYVU7UyHSIEOlz51fKAFUJBTlUrgYKngme3');
+  background-size: cover;
+ padding-bottom: 80;
+  border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+
+
+}
+.BlokA{
+  color: white;
+  text-align: center;
+  padding-bottom: 80px;
+  
+}
+
+.Blok2{
+  background-image: url('https://www.werkenbijcurio.nl/media/images/verhalen/2/2/225_joep-van-gils-vk.webp');
+  background-size: cover;
+ padding-bottom: 80;
+  border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+}
+.BlokB{
+  color: white;
+  text-align: center;
+  padding-bottom: 80px;
   
 }
