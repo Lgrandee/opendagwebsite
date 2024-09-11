@@ -37,6 +37,7 @@ html, body {
 {
   background-image:url('https://www.curio.nl/sites/default/files/styles/hero_large/public/2024-08/curio_mbo_campagne_7_2000x1125px.jpg?itok=bsDFZgzi');
  background-size: cover;
+ background-repeat: no-repeat;
  
 }
 
@@ -160,7 +161,7 @@ html, body {
 /*=============== CARD ===============*/
 .container {
   display: grid;
-  grid-template-columns:3fr 3fr 3fr;
+  grid-template-columns: 3fr 3fr 3fr;
   place-items: center;
   margin-inline: 1.5rem;
   padding-block: 5rem;
@@ -522,3 +523,34 @@ justify-content: center
   padding-bottom: 80px;
   
 }
+
+.video-container {
+  position: relative;
+  height: 20%;
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns:5fr 3fr;
+
+}
+
+.background-video {
+  width: 80%; /* Set the width to 80% of the container */
+  max-width: 800px; /* Set a maximum width for the video */
+  height: auto; /* Maintain aspect ratio */
+  z-index: -1; /* Send video behind overlay */
+}
+.overlay p{
+  font-size: 1rem;
+  color: white;
+}
+.overlay{
+  background-color: #BEB0FF;
+  margin:4%;
+  padding: 7%;
+  border-radius: 10px;
+}
+
+.overlay :hover{
+  transform: scale(1.1);
+}
+
